@@ -6,6 +6,7 @@ body {
   text-align: center;
   display: flex;
   background-color: #282c34;
+  color: white;
 }
 
 .App-logo {

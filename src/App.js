@@ -30,9 +30,10 @@ const paletteNames = ["YouTube Video Palette", "12345 Palette"];
 function App() {
   return (
     <div className="App">
-      {palettes.map((palette, index) => (
+      <h1>COLORS</h1>
+      {/* {palettes.map((palette, index) => (
         <Palette key={index} title={paletteNames[index]} palette={palette} />
-      ))}
+      ))} */}
     </div>
   );
 }
