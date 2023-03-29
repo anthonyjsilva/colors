@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from './Card';
 
 function Palette({ title, palette }) {
   const paletteValues = Object.values(palette);

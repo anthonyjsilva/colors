@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const getCardStyle = (color) => ({
   backgroundColor: color,
@@ -9,10 +9,10 @@ function Card({ colorName, colorValue }) {
 
   // This is the function we wrote earlier
   async function copyTextToClipboard(text) {
-    if ("clipboard" in navigator) {
+    if ('clipboard' in navigator) {
       return await navigator.clipboard.writeText(text);
     } else {
-      return document.execCommand("copy", true, text);
+      return document.execCommand('copy', true, text);
     }
   }
 
@@ -39,7 +39,7 @@ function Card({ colorName, colorValue }) {
         style={getCardStyle(colorValue)}
         onClick={handleCopyClick(colorValue.substring(1))}
       >
-        <span>{isCopied ? "Copied!" : ""}</span>
+        <span>{isCopied ? 'Copied!' : ''}</span>
       </div>
       <div onClick={handleCopyClick(colorValue)}>
         <div className="Card-title">{colorName}</div>

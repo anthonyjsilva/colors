@@ -1,10 +1,102 @@
+:root {
+  /* blue branding color for don't stop pushing yourself */
+  --dspyBlue: #46e1f9;
+  --dspyDarkBg: #101010;
+
+  /* personal website */
+  --color-primary: #18a7ff;
+  --color-secondary: #fafafa;
+  --color-accent: #0b4c73;
+  --color-text: #4e4e4e;
+  --bg-color-primary: #3a3a3a;
+  --bg-color-secondary: lightgray;
+
+  /* youtube */
+  --yt-blackTextOutline: #101010;
+  --yt-red: #f93838;
+  --yt-orange: #f9a538;
+  --yt-yellow: #ffde59;
+  --yt-green: #78f938;
+
+  /* 12345 */
+  --blackTextOutline: #101010;
+  --darkGrayBg: #2b303a;
+  --darkGrayPurpleBg: #363d69;
+  --medGrayPurpleBg: #545e9d;
+  --lightGrayPurpleBg: #6673c4;
+  --song-12345-red: #f45662;
+  --song-12345-green: #c1ff72;
+  --song-12345-blue: #5ce1e6;
+  --song-12345-orange: #ffbd59;
+  --song-12345-pink: #f881e5;
+  --song-12345-purple: #d681f8;
+
+  /* just do it archived todo list app */
+  --bg-color: #efe9d4;
+  --heading-color: #6d6a64;
+  --white: white;
+  --dark: #5d5555;
+  --shadow: #6c6c6ca3;
+  --checked: #7d7474;
+  --note-color-red: #e67a7a;
+  --note-color-orange: #ecbc64;
+  --note-color-yellow: #e6e46c;
+  --note-color-green: #75df75;
+  --note-color-blue: #68dcdc;
+  --note-color-purple: #c675df;
+  --transparent: rgba(60, 60, 60, 0.1);
+}
+
 body {
   background-color: #282c34;
 }
 
+h1 {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #f614b8;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f614b8 20%,
+    #f78ea8 50%,
+    #5ce1e6 60%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+h1 span:nth-child(1) {
+  color: var(--song-12345-red);
+}
+
+h1 span:nth-child(2) {
+  color: var(--song-12345-green);
+}
+
+h1 span:nth-child(3) {
+  color: var(--song-12345-blue);
+}
+
+h1 span:nth-child(4) {
+  color: var(--song-12345-orange);
+}
+
+h1 span:nth-child(5) {
+  color: var(--song-12345-pink);
+}
+
+h1 span:nth-child(6) {
+  color: var(--song-12345-purple);
+}
+
 .App {
   text-align: center;
-  display: flex;
   background-color: #282c34;
   color: white;
 }
@@ -47,8 +139,17 @@ body {
 .Palette {
   color: white;
   padding: 20px;
-  border: 1px solid white;
+  border: 1px solid #666e7e;
+  margin: 20px;
+  border-radius: 10px;
 }
+
+h1,
+.Palette h3 {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
 .Palette-cards {
   display: flex;
   flex-wrap: wrap;
