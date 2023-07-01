@@ -1,6 +1,14 @@
 import './App.css';
 import Palette from './Palette';
 
+const allINeedPalette = {
+  'purple-bg': '#433CDD',
+  'gold-bg': '#FFBD75',
+  'gray-bg': '#2B303A',
+  'gray-text': '#2B303A',
+  'gold-text': '#FFBD75',
+};
+
 const portfolioPalette = {
   'color-primary': '#18a7ff',
   'color-secondary': '#fafafa',
@@ -56,6 +64,7 @@ const justDoItPalette = {
 };
 
 const paletteNames = [
+  'allINeed',
   'Portfolio',
   'DSPY',
   'YouTube Video',
@@ -64,6 +73,7 @@ const paletteNames = [
 ];
 
 const palettes = [
+  allINeedPalette,
   portfolioPalette,
   dspyPalette,
   youtubePalette,
